@@ -1,28 +1,28 @@
 import React from "react";
 import "./Projects.css";
 import {
-  FaGlobe,
   FaCloudSun,
-  FaProjectDiagram,
+  FaUsers,
   FaPython,
   FaDatabase,
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
   FaGithub,
+  FaRobot,
 } from "react-icons/fa";
 
 const Projects = () => {
   const subjects = [
     {
-      icon: <FaProjectDiagram />,
+      icon: <FaUsers />,
       title: "The STEM Tutor Network",
       technologies: ["HTML", "CSS", "JavaScript", "sqlite3"],
       description:
         "Full-stack starter tutoring web app to connect STEM students and tutors",
     },
     {
-      icon: <FaGlobe />,
+      icon: <FaRobot />,
       title: "DeepSeek Clone",
       technologies: ["MERN Stack", "TailwindCSS", "Clerk", "DeepSeek API"],
       description:
@@ -39,7 +39,7 @@ const Projects = () => {
 
   return (
     <section className="projects" id="projects">
-      <h2>Projects I've built</h2>
+      <h2>Projects [Available on GitHub]</h2>
       <p>
         Constantly learning frameworks & coding languages to build better
         things!
@@ -61,7 +61,7 @@ const Projects = () => {
           <FaJsSquare /> JavaScript
         </button>
         <button className="cl-button">
-          <FaGithub /> Version Control (Git)
+          <FaGithub /> Version Control
         </button>
       </div>
       <p>
@@ -72,7 +72,7 @@ const Projects = () => {
           <div className="card fade-in" key={index}>
             <i>{subject.icon}</i>
             <h3>{subject.title}</h3>
-            <p>Technologies Used</p>
+            <p><u>Technologies Used</u></p>
             {subject.technologies.map((technology, i) => (
               <p key={i}>{technology}</p>
             ))}
