@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="hero-content fade-in">
         <h1>
-            <FaCode className="horizontal-spin-icon" /> Hi, I'm{' '}
+            <span className="highlight"><FaCode className="horizontal-spin-icon" /></span> Hi, I'm{' '}
             <span className="highlight">Sai Raghavan Commandur</span>
         </h1>
         <p>

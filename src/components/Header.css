@@ -87,9 +87,9 @@ header {
     background-color: #4AF626;
   }
   
-  .login-signup-button {
+  .download-cv-button {
     background-color: #D00000;
-    color: white;
+    color: black;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -97,19 +97,23 @@ header {
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .login-signup-button:hover {
+  .download-cv-button:hover {
     background-color: #D00000;
-    color: white;
+    color: black;
   }
   
-  body.dark-mode .login-signup-button {
+  body.dark-mode .download-cv-button {
     background-color: #4AF626;
-    color: white;
+    color: black;
   }
   
-  body.dark-mode .login-signup-button:hover {
+  body.dark-mode .download-cv-button:hover {
     background-color: #4AF626;
-    color: white;
+    color: black;
+  }
+  
+  .nav-links .download-cv-button {
+    color: black !important;
   }
   
   @media (max-width: 768px) {

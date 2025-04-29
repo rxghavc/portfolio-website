@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const contactMethods = [
@@ -8,11 +8,6 @@ const Contact = () => {
       icon: <FaEnvelope />,
       text: "Email",
       link: "mailto:r.commandur@gmail.com"
-    },
-    {
-      icon: <FaPhone />,
-      text: "Phone",
-      link: "tel:+447933454109"
     },
     {
       icon: <FaLinkedin />,

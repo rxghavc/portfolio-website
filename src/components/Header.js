@@ -28,9 +28,13 @@ const Header = ({ toggleTheme, isDarkMode }) => {
           <ul className="nav-links">
             <li><a href="#home" onClick={() => handleNavClick('home')} className={activeLink === 'home' ? 'active' : ''}>Home</a></li>
             <li><a href="#services" onClick={() => handleNavClick('services')} className={activeLink === 'services' ? 'active' : ''}>My Experience</a></li>
-            <li><a href="#about" onClick={() => handleNavClick('about')} className={activeLink === 'about' ? 'active' : ''}>About</a></li>
+            <li><a href="#projects" onClick={() => handleNavClick('projects')} className={activeLink === 'projects' ? 'active' : ''}>Projects</a></li>
             <li><a href="#contact" onClick={() => handleNavClick('contact')} className={activeLink === 'contact' ? 'active' : ''}>Contact</a></li>
-            <li><a href="/login-signup" className="login-signup-button">Login/Signup</a></li>
+            <li>
+              <a href="/assets/Sai_Raghavan_Commandur_CV.pdf" className="download-cv-button" download>
+                View my CV
+              </a>
+            </li>
           </ul>
           <button id="themeToggle" onClick={toggleTheme}>
             <FaAdjust />
