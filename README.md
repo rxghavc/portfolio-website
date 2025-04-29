@@ -2,22 +2,6 @@
 
 This is my personal portfolio website, showcasing my projects, skills, and professional journey. The website is built using modern web development technologies and is designed to be responsive and user-friendly.
 
-## Screenshots
-
-### Light Mode
-
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-
-### Dark Mode
-
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
-![alt text](image-7.png)
-
 ## Features
 
 - **Hero Section**: Introduction and overview.
