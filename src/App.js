@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Services from './components/Services';
+import Experience from './components/MyExperience';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -18,10 +18,10 @@ function App() {
     // Add or remove the dark mode class on the body element
     if (!isDarkMode) {
       document.body.classList.add('dark-mode');
-      document.getElementById('favicon').setAttribute('href', '/favicon-dark.ico'); // Set dark mode favicon
+      document.getElementById('favicon').setAttribute('href', '/favicon-dark.ico');
     } else {
       document.body.classList.remove('dark-mode');
-      document.getElementById('favicon').setAttribute('href', '/favicon.ico'); // Set light mode favicon
+      document.getElementById('favicon').setAttribute('href', '/favicon.ico');
     }
   };
 
@@ -63,7 +63,7 @@ function App() {
     <div className="App">
       <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Hero />
-      <Services />
+      <Experience />
       <About />
       <Contact />
       <Footer />
