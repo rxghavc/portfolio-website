@@ -2,22 +2,21 @@ import React, { useState } from 'react';
 import './Header.css';
 import { FaAdjust } from 'react-icons/fa';
 
-// Use an absolute path for the logo
-const logo = '/assets/images/logo.png';
-
-const Header = ({ toggleTheme }) => {
+const Header = ({ toggleTheme, isDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
 
   const handleNavClick = (section) => {
     setActiveLink(section);
-    const element = document.querySelector(`section#${section}`); // Select the section by ID
-    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset; // Get the exact position of the section's outer edge
+    const element = document.querySelector(`section#${section}`);
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
 
     window.scrollTo({
       top: elementPosition,
       behavior: 'smooth',
     });
   };
+
+  const logo = isDarkMode ? '/assets/images/logo-dark.png' : '/assets/images/logo.png';
 
   return (
     <>

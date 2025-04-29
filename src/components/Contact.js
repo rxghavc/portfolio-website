@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import { FaEnvelope, FaPhone, FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const contactMethods = [
@@ -11,26 +11,26 @@ const Contact = () => {
     },
     {
       icon: <FaPhone />,
-      text: "Phone Numbers",
-      link: "tel:07933454109"
+      text: "Phone",
+      link: "tel:+447933454109"
     },
     {
-      icon: <FaFacebook />,
-      text: "Facebook",
-      link: "https://www.facebook.com",
+      icon: <FaLinkedin />,
+      text: "LinkedIn",
+      link: "https://linkedin.com/in/raghavcommandur",
       target: "_blank"
     },
     {
-      icon: <FaWhatsapp />,
-      text: "WhatsApp Community",
-      link: "https://www.whatsapp.com",
+      icon: <FaGithub />,
+      text: "GitHub",
+      link: "https://github.com/rxghavc",
       target: "_blank"
     }
   ];
 
   return (
     <section className="contact" id="contact">
-      <h2>Contact Us</h2>
+      <h2>Contact Me</h2>
       <div className="contact-buttons">
         {contactMethods.map((method, index) => (
           <a 
