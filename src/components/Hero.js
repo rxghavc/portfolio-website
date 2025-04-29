@@ -5,11 +5,25 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-content fade-in">
-        <h1>Welcome to <span className="highlight">TheSTEMTutorNetwork</span></h1>
-        <p>We specialise in <span className="highlight">delivering GCSE/A-Level Content</span> to anyone who is interested in <span className="highlight">boosting their grades.</span></p>
-        <p>Our <span className="highlight">tutors are highly experienced</span> in their respective fields and the team carries out extensive background checks to make sure that <span className="highlight">the services we provide for our clients are noteworthy</span> so either yourself or your child can succeed.</p>
-        <p>You can view more about our tutoring services and how we operate further down the page!</p>
-        <p><span className="highlight">Disclaimer:</span> We do not handle any scheduling services for tutor-tutee relationships, <span className="highlight">our company provide certified tutors for you to be able to contact and use for classes!</span></p>
+        <h1>Hi, I'm <span className="highlight">Sai Raghavan Commandur</span></h1>
+        <p>
+          I'm a <span className="highlight">Computer Science undergraduate</span> at the University of Surrey with a passion for 
+          <span className="highlight"> full-stack development</span>, scalable systems, and <span className="highlight">DevOps</span>.
+        </p>
+        <p>
+          I specialize in building <span className="highlight">user-centric applications</span> using modern web technologies like 
+          <span className="highlight">JavaScript, Node.js, and cloud platforms</span>. My goal is to create impactful software solutions 
+          that drive innovation and accessibility.
+        </p>
+        <p>
+          With experience in <span className="highlight">teaching programming</span> and developing real-world projects, I bring a unique 
+          blend of technical expertise and communication skills. From designing a social media app prototype for elderly users to 
+          delivering tailored lessons in Computer Science and Mathematics, I thrive on solving problems and helping others succeed.
+        </p>
+        <p>
+          Feel free to explore my portfolio to learn more about my <span className="highlight">projects, skills, and achievements</span>. 
+          Let's build something amazing together!
+        </p>
       </div>
     </section>
   );

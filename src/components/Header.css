@@ -7,7 +7,7 @@ header {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #e792c3;
+    border-bottom: 3px solid #D00000;
     transition: border-bottom-color 0.5s ease, background-color 0.5s ease;
   }
   
@@ -54,7 +54,7 @@ header {
   }
   
   .nav-links li a:hover {
-    color: #e792c3;
+    color: #D00000;
     transform: translateY(-2px);
   }
   
@@ -78,7 +78,7 @@ header {
   .header-line {
     border: none;
     height: 3px;
-    background-color: #e792c3;
+    background-color: #D00000;
     margin: 0;
     transition: background-color 0.5s ease;
   }
@@ -88,8 +88,8 @@ header {
   }
   
   .login-signup-button {
-    background-color: #e792c3;
-    color: black;
+    background-color: #D00000;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -98,7 +98,7 @@ header {
   }
   
   .login-signup-button:hover {
-    background-color: #e75fae;
+    background-color: #D00000;
     color: white;
   }
   
@@ -109,6 +109,7 @@ header {
   
   body.dark-mode .login-signup-button:hover {
     background-color: #092369;
+    color: white;
   }
   
   @media (max-width: 768px) {
