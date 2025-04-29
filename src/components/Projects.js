@@ -1,34 +1,72 @@
-import React from 'react';
-import './Projects.css';
-import { FaGlobe, FaCloudSun, FaProjectDiagram } from 'react-icons/fa';
+import React from "react";
+import "./Projects.css";
+import {
+  FaGlobe,
+  FaCloudSun,
+  FaProjectDiagram,
+  FaPython,
+  FaDatabase,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaGithub,
+} from "react-icons/fa";
 
 const Projects = () => {
   const subjects = [
     {
-        icon: <FaProjectDiagram />,
-        title: "The STEM Tutor Network",
-        technologies: ["HTML", "CSS", "JavaScript", "sqlite3"],
-        description: "Full-stack starter tutoring web app to connect STEM students and tutors"
-      },
-      {
-        icon: <FaGlobe />,
-        title: "DeepSeek Clone",
-        technologies: ["MERN Stack", "TailwindCSS", "Clerk", "DeepSeek API"],
-        description: "A full-stack MERN (MongoDB, Express, React, Node.js) project that provides a seamless user experience for managing and interacting with AI-powered chat functionalities"
-      },
-      {
-        icon: <FaCloudSun />,
-        title: "Weather App",
-        technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
-        description: "A lightweight and responsive weather application that allows users to check real-time weather conditions by entering any city name."
-      }
+      icon: <FaProjectDiagram />,
+      title: "The STEM Tutor Network",
+      technologies: ["HTML", "CSS", "JavaScript", "sqlite3"],
+      description:
+        "Full-stack starter tutoring web app to connect STEM students and tutors",
+    },
+    {
+      icon: <FaGlobe />,
+      title: "DeepSeek Clone",
+      technologies: ["MERN Stack", "TailwindCSS", "Clerk", "DeepSeek API"],
+      description:
+        "A full-stack MERN (MongoDB, Express, React, Node.js) project that provides a seamless user experience for managing and interacting with AI-powered chat functionalities",
+    },
+    {
+      icon: <FaCloudSun />,
+      title: "Weather App",
+      technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+      description:
+        "A lightweight and responsive weather application that allows users to check real-time weather conditions by entering any city name.",
+    },
   ];
 
   return (
     <section className="projects" id="projects">
       <h2>Projects I've built</h2>
-      <p>Constantly learning frameworks & coding languages to build better things!</p>
-      <p><br /></p>
+      <p>
+        Constantly learning frameworks & coding languages to build better
+        things!
+      </p>
+      <div className="code-language-buttons">
+        <button className="cl-button">
+          <FaPython /> Python
+        </button>
+        <button className="cl-button">
+          <FaDatabase /> SQL
+        </button>
+        <button className="cl-button">
+          <FaHtml5 /> HTML
+        </button>
+        <button className="cl-button">
+          <FaCss3Alt /> CSS
+        </button>
+        <button className="cl-button">
+          <FaJsSquare /> JavaScript
+        </button>
+        <button className="cl-button">
+          <FaGithub /> Version Control (Git)
+        </button>
+      </div>
+      <p>
+        <br />
+      </p>
       <div className="subject-cards">
         {subjects.map((subject, index) => (
           <div className="card fade-in" key={index}>

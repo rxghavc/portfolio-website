@@ -36,3 +36,38 @@ body.dark-mode .subject-cards .card {
 .card p:last-of-type {
     font-weight: bold; /* Make the last <p> element (description) bolder */
   }
+
+/* Add styles for the code-language-buttons */
+.code-language-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.code-language-buttons .cl-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #D00000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.code-language-buttons .cl-button:hover {
+  background-color: #800000;
+}
+
+body.dark-mode .code-language-buttons .cl-button {
+  background-color: #4AF626;
+  color: black;
+}
+
+body.dark-mode .code-language-buttons .cl-button:hover {
+  background-color: #239B13;
+}
