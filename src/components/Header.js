@@ -27,7 +27,6 @@ const Header = ({ toggleTheme }) => {
         <nav>
           <div className="logo">
             <img src={logo} alt="TheSTEMTutorNetwork Logo" className="logo-image" />
-            <span className="highlight">TheSTEMTutorNetwork</span>
           </div>
           <ul className="nav-links">
             <li><a href="#home" onClick={() => handleNavClick('home')} className={activeLink === 'home' ? 'active' : ''}>Home</a></li>
