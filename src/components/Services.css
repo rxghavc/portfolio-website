@@ -46,12 +46,12 @@
   }
   
   body.dark-mode .card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 10px #204199, 0 0 25px #204199, 0 0 35px #204199;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 10px #4AF626, 0 0 25px #4AF626, 0 0 35px #4AF626;
     background-color: #242424;
   }
   
   body.dark-mode .card i {
-    color: #204199;
+    color: #4AF626;
   }
   
   @media (max-width: 768px) {

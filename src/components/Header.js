@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './Header.css';
 import { FaAdjust } from 'react-icons/fa';
 
-// Use an absolute path for the logo
-const logo = '/assets/images/logo.png';
+// Define paths for both light and dark mode logos
+const lightLogo = '/assets/images/logo.png';
+const darkLogo = '/assets/images/logo-dark.png';
 
-const Header = ({ toggleTheme }) => {
+const Header = ({ toggleTheme, isDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
 
   const handleNavClick = (section) => {
@@ -26,7 +27,12 @@ const Header = ({ toggleTheme }) => {
       <header>
         <nav>
           <div className="logo">
-            <img src={logo} alt="TheSTEMTutorNetwork Logo" className="logo-image" />
+            {/* Conditionally render the logo based on the theme */}
+            <img
+              src={isDarkMode ? darkLogo : lightLogo}
+              alt="TheSTEMTutorNetwork Logo"
+              className="logo-image"
+            />
           </div>
           <ul className="nav-links">
             <li><a href="#home" onClick={() => handleNavClick('home')} className={activeLink === 'home' ? 'active' : ''}>Home</a></li>

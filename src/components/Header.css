@@ -12,7 +12,7 @@ header {
   }
   
   body.dark-mode header {
-    border-bottom-color: #204199;
+    border-bottom-color: #4AF626;
   }
   
   nav {
@@ -59,7 +59,7 @@ header {
   }
   
   body.dark-mode .nav-links li a:hover {
-    color: #204199;
+    color: #4AF626;
   }
   
   #themeToggle {
@@ -84,7 +84,7 @@ header {
   }
   
   body.dark-mode .header-line {
-    background-color: #204199;
+    background-color: #4AF626;
   }
   
   .login-signup-button {
@@ -103,12 +103,12 @@ header {
   }
   
   body.dark-mode .login-signup-button {
-    background-color: #204199;
+    background-color: #4AF626;
     color: white;
   }
   
   body.dark-mode .login-signup-button:hover {
-    background-color: #092369;
+    background-color: #4AF626;
     color: white;
   }
   

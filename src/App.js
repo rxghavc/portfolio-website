@@ -1,23 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './App.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // State to manage dark mode
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    // Apply dark mode class to body
-    if (darkMode) {
+  // Function to toggle dark mode
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+
+    // Add or remove the dark mode class on the body element
+    if (!isDarkMode) {
       document.body.classList.add('dark-mode');
+      document.getElementById('favicon').setAttribute('href', '/favicon-dark.ico'); // Set dark mode favicon
     } else {
       document.body.classList.remove('dark-mode');
+      document.getElementById('favicon').setAttribute('href', '/favicon.ico'); // Set light mode favicon
     }
+  };
 
+  useEffect(() => {
     // Initialize fade-in animations
     const fadeInElements = document.querySelectorAll('.fade-in');
     fadeInElements.forEach(element => {
@@ -49,15 +57,11 @@ function App() {
         button.removeEventListener('mouseleave', () => {});
       });
     };
-  }, [darkMode]);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  };
+  }, [isDarkMode]);
 
   return (
     <div className="App">
-      <Header toggleTheme={toggleTheme} />
+      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Hero />
       <Services />
       <About />
