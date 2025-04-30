@@ -8,7 +8,8 @@ const Header = ({ toggleTheme, isDarkMode }) => {
   const handleNavClick = (section) => {
     setActiveLink(section);
     const element = document.querySelector(`section#${section}`);
-    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
     window.scrollTo({
       top: elementPosition,

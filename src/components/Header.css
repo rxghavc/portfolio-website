@@ -122,3 +122,8 @@ header {
       gap: 15px;
     }
   }
+
+  
+section {
+  scroll-margin-top: 105px;
+}
