@@ -71,10 +71,6 @@ header {
     transition: color 0.3s, transform 0.3s;
   }
   
-  #themeToggle:hover {
-    transform: rotate(20deg);
-  }
-  
   .header-line {
     border: none;
     height: 3px;

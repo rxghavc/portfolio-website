@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { FaAdjust } from 'react-icons/fa';
+import { FaCode, FaLaptopCode } from 'react-icons/fa';
 
 const Header = ({ toggleTheme, isDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
@@ -38,7 +38,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
             </li>
           </ul>
           <button id="themeToggle" onClick={toggleTheme}>
-            <FaAdjust />
+            {isDarkMode ? <FaLaptopCode /> : <FaCode />}
           </button>
         </nav>
       </header>
