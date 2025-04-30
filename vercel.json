@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/CV",
+      "destination": "/assets/Sai_Raghavan_Commandur_CV.pdf",
+      "permanent": true
+    }
+  ]
+}

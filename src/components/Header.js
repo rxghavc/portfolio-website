@@ -32,8 +32,8 @@ const Header = ({ toggleTheme, isDarkMode }) => {
             <li><a href="#projects" onClick={() => handleNavClick('projects')} className={activeLink === 'projects' ? 'active' : ''}>Projects</a></li>
             <li><a href="#contact" onClick={() => handleNavClick('contact')} className={activeLink === 'contact' ? 'active' : ''}>Contact</a></li>
             <li>
-              <a href="/assets/Sai_Raghavan_Commandur_CV.pdf" className="download-cv-button" download>
-                View my CV
+              <a href="/CV" className="download-cv-button" download>
+                <i className="fas fa-file-pdf"></i> View my CV
               </a>
             </li>
           </ul>
