@@ -2,7 +2,6 @@ import React from "react";
 import "./Projects.css";
 import {
   FaCloudSun,
-  FaUsers,
   FaPython,
   FaDatabase,
   FaHtml5,
@@ -10,16 +9,19 @@ import {
   FaJsSquare,
   FaGithub,
   FaRobot,
+  FaFlask,
+  FaRegUserCircle,
 } from "react-icons/fa";
 
 const Projects = () => {
   const subjects = [
     {
-      icon: <FaUsers />,
+      icon: <FaFlask />,
       title: "The STEM Tutor Network",
       technologies: ["HTML", "CSS", "JavaScript", "sqlite3"],
       description:
         "Full-stack starter tutoring web app to connect STEM students and tutors",
+      repoLink: "https://github.com/rxghavc/TheSTEMTutorNetwork",
     },
     {
       icon: <FaRobot />,
@@ -27,6 +29,8 @@ const Projects = () => {
       technologies: ["MERN Stack", "TailwindCSS", "Clerk", "DeepSeek API"],
       description:
         "A full-stack MERN (MongoDB, Express, React, Node.js) project that provides a seamless user experience for managing and interacting with AI-powered chat functionalities",
+      repoLink: "https://github.com/rxghavc/DeepSeek-Clone",
+      liveLink: "https://deep-seek-clone-three.vercel.app/",
     },
     {
       icon: <FaCloudSun />,
@@ -34,6 +38,16 @@ const Projects = () => {
       technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
       description:
         "A lightweight and responsive weather application that allows users to check real-time weather conditions by entering any city name.",
+      repoLink: "https://github.com/rxghavc/Weather-App",
+    },
+    {
+      icon: <FaRegUserCircle />,
+      title: "Portfolio Website",
+      technologies: ["React", "CSS", "JavaScript"],
+      description:
+        "A personal portfolio website showcasing my projects, skills, and contact information. It's also the website you're currently viewing!",
+      repoLink: "https://github.com/rxghavc/portfolio-website",
+      liveLink: "https://raghavc-portfolio.vercel.app/",
     },
   ];
 
@@ -77,6 +91,14 @@ const Projects = () => {
               <p key={i}>{technology}</p>
             ))}
             <p>{subject.description}</p>
+            <a href={subject.repoLink} target="_blank" rel="noopener noreferrer" className="repo-button">
+              View Repository Code
+            </a>
+            {subject.liveLink && (
+              <a href={subject.liveLink} target="_blank" rel="noopener noreferrer" className="live-button">
+                Interact with the Live App
+              </a>
+            )}
           </div>
         ))}
       </div>
