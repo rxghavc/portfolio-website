@@ -34,7 +34,7 @@ const Projects = () => {
     },
     {
       icon: <FaCloudSun />,
-      title: "Weather App",
+      title: "AeroCast Weather App",
       technologies: ["React", "TailwindCSS", "TypeScript", "OpenWeatherMap API"],
       description:
         "A modern weather application providing real-time weather updates, forecasts, and location-based weather details.",
