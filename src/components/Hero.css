@@ -17,7 +17,7 @@
     display: inline-block;
     margin-right: 10px;
     animation: horizontalSpinBounce 3s ease-in-out infinite;
-    transform-origin: center center;
+    transform-origin: center center;  
   }
   
   @keyframes horizontalSpinBounce {

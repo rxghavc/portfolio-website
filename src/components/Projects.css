@@ -1,15 +1,21 @@
 /* Projects section styles */
 .projects {
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
   padding: 40px 20px;
   color: white;
   margin: 0 auto;
   text-align: center;
-  background-color: #2c2c2c;
   transition: background-color 0.5s ease;
 }
 
 body.dark-mode .projects {
-  background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
 }
 
 .subject-cards {
