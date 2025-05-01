@@ -35,10 +35,11 @@ const Projects = () => {
     {
       icon: <FaCloudSun />,
       title: "Weather App",
-      technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+      technologies: ["React", "TailwindCSS", "TypeScript", "OpenWeatherMap API"],
       description:
-        "A lightweight and responsive weather application that allows users to check real-time weather conditions by entering any city name.",
-      repoLink: "https://github.com/rxghavc/Weather-App",
+        "A modern weather application providing real-time weather updates, forecasts, and location-based weather details.",
+        repoLink: "https://github.com/rxghavc/AeroCast-Weather-App",
+        liveLink: "https://raghavc-weatherproject.vercel.app",
     },
     {
       icon: <FaRegUserCircle />,
