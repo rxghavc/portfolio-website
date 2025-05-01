@@ -17,13 +17,17 @@ const Header = ({ toggleTheme, isDarkMode }) => {
     });
   };
 
+  const handleLogoClick = () => {
+    window.location.href = '/#home';
+  };
+
   const logo = isDarkMode ? '/assets/images/logo-dark.png' : '/assets/images/logo.png';
 
   return (
     <>
       <header>
         <nav>
-          <div className="logo">
+          <div className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
             <img src={logo} alt="TheSTEMTutorNetwork Logo" className="logo-image" />
           </div>
           <ul className="nav-links">
