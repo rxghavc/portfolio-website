@@ -1,23 +1,8 @@
 import React from 'react';
 import './Hero.css';
-import { FaCode, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaCode } from 'react-icons/fa';
 
 const Hero = () => {
-  const contactMethods = [
-    {
-      icon: <FaLinkedin />,
-      text: "LinkedIn",
-      link: "https://linkedin.com/in/raghavcommandur",
-      target: "_blank"
-    },
-    {
-      icon: <FaGithub />,
-      text: "GitHub",
-      link: "https://github.com/rxghavc",
-      target: "_blank"
-    }
-  ];
-
   return (
     <section className="hero" id="home">
       <div className="hero-content fade-in">
@@ -42,20 +27,6 @@ const Hero = () => {
         <p>
           Feel free to explore my portfolio to learn more about my <span className="highlight">projects, skills, and professional journey</span>. I'm always trying to build new things and learn new skills towards my career goals!
         </p>
-        <div className="contact-buttons">
-          {contactMethods.map((method, index) => (
-            <a 
-              key={index}
-              href={method.link} 
-              className="button-3d"
-              target={method.target || "_self"}
-              rel="noopener noreferrer"
-            >
-              {method.icon}
-              {method.text}
-            </a>
-          ))}
-        </div>
       </div>
     </section>
   );
