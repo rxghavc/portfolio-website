@@ -54,11 +54,12 @@ header {
   
   .nav-links li a:hover {
     color: var(--light-primary);
-    transform: translateY(-2px);
+    transform: translateY(10px);
   }
   
   body.dark-mode .nav-links li a:hover {
     color: var(--dark-primary);
+    transform: translateY(10px);
   }
   
   #themeToggle {
