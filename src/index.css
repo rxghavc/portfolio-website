@@ -30,11 +30,12 @@ body.dark-mode {
 
 .highlight {
   color: var(--light-primary);
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 body.dark-mode .highlight {
   color: var(--dark-primary);
+  font-weight: bold;
 }
 
 @keyframes fadeIn {
