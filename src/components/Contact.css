@@ -1,13 +1,12 @@
-/* Contact section styles */
 .contact {
     padding: 15px 20px;
-    max-width: 100%; /* Removed fixed width */
-    margin: 0; /* Removed auto margin to stretch fully */
+    max-width: 100%;
+    margin: 0;
     text-align: center;
-    --s: 200px; /* control the size */
-    --c1: #ffffff; /* Light mode primary color */
-    --c2: #f0f0f0; /* Light mode secondary color */
-    --c3: #e0e0e0; /* Light mode tertiary color */
+    --s: 200px;
+    --c1: #ffffff;
+    --c2: #f0f0f0;
+    --c3: #e0e0e0;
 
     background: repeating-conic-gradient(
           from 30deg,
@@ -25,12 +24,11 @@
 }
 
 body.dark-mode .contact {
-  --c1: #1d1d1d; /* Dark mode primary color */
-  --c2: #4e4f51; /* Dark mode secondary color */
-  --c3: #3c3c3c; /* Dark mode tertiary color */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
 }
 
-/* Re-added styles for the contact buttons */
 .contact-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +72,7 @@ body.dark-mode .button-3d {
 }
 
 .contact-buttons .button-3d:hover {
-  color: #D00000;
+  color: var(--light-primary);
 }
 
 body.dark-mode .contact-buttons .button-3d {
@@ -83,5 +81,5 @@ body.dark-mode .contact-buttons .button-3d {
 }
 
 body.dark-mode .contact-buttons .button-3d:hover {
-  color: #4AF626;
+  color: var(--dark-primary-hover);
 }

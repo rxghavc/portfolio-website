@@ -1,4 +1,3 @@
-/* Projects section styles */
 .projects {
   background-color: #313131;
   background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
@@ -25,8 +24,8 @@ body.dark-mode .projects {
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
-  max-width: 1800px; /* Added max-width to control the gap between cards */
-  margin: 0 auto; /* Center the cards within the container */
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .subject-cards .card {
@@ -40,10 +39,9 @@ body.dark-mode .subject-cards .card {
 }
 
 .card p:last-of-type {
-    font-weight: bold; /* Make the last <p> element (description) bolder */
+    font-weight: bold;
   }
 
-/* Add styles for the code-language-buttons */
 .code-language-buttons {
   margin-top: 20px;
   display: flex;
@@ -58,7 +56,7 @@ body.dark-mode .subject-cards .card {
   padding: 10px 15px;
   font-size: 16px;
   color: #fff;
-  background-color: #D00000;
+  background-color: var(--light-primary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -66,24 +64,24 @@ body.dark-mode .subject-cards .card {
 }
 
 .code-language-buttons .cl-button:hover {
-  background-color: #800000;
+  background-color: var(--light-primary-hover);
 }
 
 body.dark-mode .code-language-buttons .cl-button {
-  background-color: #4AF626;
+  background-color: var(--dark-primary);
   color: black;
 }
 
 body.dark-mode .code-language-buttons .cl-button:hover {
-  background-color: #239B13;
+  background-color: var(--dark-primary-hover);
 }
 
 .repo-button {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #D00000; /* Red background */
-  color: #ffffff; /* White text */
+  background-color: var(--light-primary);
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -92,29 +90,29 @@ body.dark-mode .code-language-buttons .cl-button:hover {
 }
 
 .repo-button:hover {
-  background-color: #a00000; /* Darker red on hover */
-  transform: translateY(-3px); /* Slight lift effect */
+  background-color: var(--light-primary-hover);
+  transform: translateY(-3px);
 }
 
 .repo-button:active {
-  transform: translateY(0); /* Reset lift effect on click */
+  transform: translateY(0);
 }
 
 body.dark-mode .repo-button {
-  background-color: #4AF626; /* Green background for dark mode */
-  color: #000000; /* Black text for contrast */
+  background-color: var(--dark-primary);
+  color: #000000;
 }
 
 body.dark-mode .repo-button:hover {
-  background-color: #239B13; /* Darker green on hover */
+  background-color: var(--dark-primary-hover);
 }
 
 .live-button {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #D00000; /* Blue background */
-  color: #ffffff; /* White text */
+  background-color: var(--light-primary);
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -123,19 +121,19 @@ body.dark-mode .repo-button:hover {
 }
 
 .live-button:hover {
-  background-color: #a00000; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight lift effect */
+  background-color: var(--light-primary-hover);
+  transform: translateY(-3px);
 }
 
 .live-button:active {
-  transform: translateY(0); /* Reset lift effect on click */
+  transform: translateY(0);
 }
 
 body.dark-mode .live-button {
-  background-color: #4AF626; /* Green background for dark mode */
-  color: #000000; /* Black text for contrast */
+  background-color: var(--dark-primary);
+  color: #000000;
 }
 
 body.dark-mode .live-button:hover {
-  background-color: #239B13; /* Darker green on hover */
+  background-color: var(--dark-primary-hover);
 }
