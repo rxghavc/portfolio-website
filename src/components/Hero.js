@@ -5,6 +5,9 @@ import { FaCode } from 'react-icons/fa';
 const Hero = () => {
   return (
     <section className="hero" id="home">
+      <div className="pattern-container">
+        <div className="pattern" />
+      </div>
       <div className="hero-content fade-in">
         <h1>
             <span className="highlight"><FaCode className="horizontal-spin-icon" /></span> Hi, I'm{' '}
