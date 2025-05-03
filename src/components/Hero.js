@@ -11,7 +11,7 @@ const Hero = () => {
             <span className="highlight">Sai Raghavan Commandur</span>
         </h1>
         <p>
-          I'm a <span className="highlight">B.Sc. Computer Science student</span> at the University of Surrey, passionate about 
+          I'm a <span className="highlight"> first year B.Sc. Computer Science student</span> at the University of Surrey, passionate about 
           <span className="highlight"> full-stack web development</span>, <span className="highlight"> software engineering principles</span>, and building impactful, scalable solutions.
         </p>
         <p>
