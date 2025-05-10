@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { FaCode, FaLaptopCode } from 'react-icons/fa';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
 const Header = ({ toggleTheme, isDarkMode }) => {
   const [activeLink, setActiveLink] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleNavClick = (section) => {
+  const handleNavClick = (section, event) => {
+    event.preventDefault(); // Prevent default anchor behavior
     setActiveLink(section);
+    setMenuOpen(false); // Close menu on navigation
     const element = document.querySelector(`section#${section}`);
     const headerHeight = document.querySelector('header').offsetHeight;
     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
@@ -25,16 +29,19 @@ const Header = ({ toggleTheme, isDarkMode }) => {
 
   return (
     <>
-      <header>
+      <header className={menuOpen ? 'menu-open' : ''}>
         <nav>
           <div className="logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
             <img src={logo} alt="TheSTEMTutorNetwork Logo" className="logo-image" />
           </div>
-          <ul className="nav-links">
-            <li><a href="#home" onClick={() => handleNavClick('home')} className={activeLink === 'home' ? 'active' : ''}>Home</a></li>
-            <li><a href="#services" onClick={() => handleNavClick('services')} className={activeLink === 'services' ? 'active' : ''}>My Experience</a></li>
-            <li><a href="#projects" onClick={() => handleNavClick('projects')} className={activeLink === 'projects' ? 'active' : ''}>Projects</a></li>
-            <li><a href="#contact" onClick={() => handleNavClick('contact')} className={activeLink === 'contact' ? 'active' : ''}>Contact</a></li>
+          <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <HiX /> : <HiMenuAlt3 />}
+          </button>
+          <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+            <li><a href="#home" onClick={(e) => handleNavClick('home', e)} className={activeLink === 'home' ? 'active' : ''}>Home</a></li>
+            <li><a href="#services" onClick={(e) => handleNavClick('services', e)} className={activeLink === 'services' ? 'active' : ''}>My Experience</a></li>
+            <li><a href="#projects" onClick={(e) => handleNavClick('projects', e)} className={activeLink === 'projects' ? 'active' : ''}>Projects</a></li>
+            <li><a href="#contact" onClick={(e) => handleNavClick('contact', e)} className={activeLink === 'contact' ? 'active' : ''}>Contact</a></li>
             <li>
               <a href="/CV" className="download-cv-button" download>
                 <i className="fas fa-file-pdf"></i> View my CV

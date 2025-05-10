@@ -43,13 +43,30 @@ header {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
+    transition: transform 0.3s ease-in-out;
   }
   
   .nav-links li a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s, transform 0.3s;
+  }
+
+  .nav-links li a:not(.download-cv-button)::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--light-primary);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-links li a:not(.download-cv-button):hover::after {
+    width: 100%;
   }
   
   .nav-links li a:hover {
@@ -60,6 +77,10 @@ header {
   body.dark-mode .nav-links li a:hover {
     color: var(--dark-primary);
     transform: translateY(10px);
+  }
+
+  body.dark-mode .nav-links li a::after {
+    background-color: var(--dark-primary);
   }
   
   #themeToggle {
@@ -112,13 +133,55 @@ header {
     color: black !important;
   }
   
+  /* Apply styles when the menu is open */
+  .menu-open .download-cv-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+  }
+  
+  /* Hamburger menu styles */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .nav-links.open {
+    transform: translateX(0);
+  }
+  
   @media (max-width: 768px) {
     .nav-links {
       flex-direction: column;
       gap: 15px;
     }
+    
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #2c2c2c;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+      transform: translateX(100%);
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.open {
+      transform: translateX(0);
+    }
   }
-
   
 section {
   scroll-margin-top: 105px;
