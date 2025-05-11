@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Experience from './components/MyExperience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   // State to manage dark mode
@@ -65,6 +66,7 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
+      <Analytics />
     </div>
   );
 }
