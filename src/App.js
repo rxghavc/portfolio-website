@@ -17,10 +17,10 @@ function App() {
     // Add or remove the dark mode class on the body element
     if (!isDarkMode) {
       document.body.classList.add('dark-mode');
-      document.getElementById('favicon').setAttribute('href', '/favicon-dark.ico');
+      document.getElementById('favicon').setAttribute('href', '/assets/images/rclogo-dark.png');
     } else {
       document.body.classList.remove('dark-mode');
-      document.getElementById('favicon').setAttribute('href', '/favicon.ico');
+      document.getElementById('favicon').setAttribute('href', '/assets/images/rclogo.png');
     }
   };
 

@@ -25,7 +25,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
     window.location.href = '/#home';
   };
 
-  const logo = isDarkMode ? '/assets/images/logo-dark.png' : '/assets/images/logo.png';
+  const logo = isDarkMode ? '/assets/images/rclogo-dark.png' : '/assets/images/rclogo.png';
 
   return (
     <>
